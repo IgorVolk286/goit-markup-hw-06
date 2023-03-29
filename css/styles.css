@@ -451,7 +451,8 @@ img {
   margin-top: 16px;
 }
 
-.footter-social-media {
+.social-media {
+  margin-right: 80px;
 }
 
 .text-media {
@@ -490,6 +491,56 @@ img {
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: #31d0aa;
+}
+
+.input-footer {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-right: 24px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.input-footer::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.form-button-footer {
+  position: relative;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: transparent;
+  text-align: left;
+  transition: background-color var(--duration-time) var(--timing-function);
+}
+.form-button-footer:hover,
+.form-button-footer:focus {
+  background-color: var(--color-hover);
+}
+
+.form-icon-footer {
+  position: absolute;
+  top: 50;
+  right: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 /* ---------------------------------------страница портфолио---------------------------- */
@@ -644,6 +695,7 @@ img {
   left: 50%;
   width: 408px;
   min-height: 576px;
+  padding: 24px;
   transform: translate(-50%, -50%) rotate(0);
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -651,7 +703,7 @@ img {
   border-radius: 4px;
   transition: transform 500ms linear;
 }
-.button-modal {
+.button-close-modal {
   position: absolute;
   top: 21px;
   right: 20px;
@@ -678,4 +730,82 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) rotate(460deg);
+}
+
+/* ================================модал форм==================================== */
+.form-action {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.form-input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 8px;
+  padding: 11px 38px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.form-textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+.form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.button-modal-send {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  transition: background-color var(--duration-time) var(--timing-function);
+}
+.button-modal-send:hover,
+.button-modal-send:focus {
+  background-color: var(--color-hover);
 }
