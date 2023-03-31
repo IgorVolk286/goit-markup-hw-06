@@ -494,32 +494,48 @@
         <form class="form-modal">
           <div class="form-feeld">
             <label class="form-label" for="user_name"> Name </label>
-            <input
-              class="form-input"
-              type="text"
-              id="user_name"
-              name="user_name"
-            />
+            <div class="modal-icon-tumb">
+              <input
+                class="form-input"
+                type="text"
+                id="user_name"
+                name="user_name"
+              />
+              <svg class="form-modal-icon">
+                <use href="./images/icons.svg#icon-Vector-1-1"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-feeld">
             <label class="form-label" for="user_phone">Phone</label>
-            <input
-              class="form-input"
-              type="tel"
-              id="user_phone"
-              name="user_phone"
-            />
+            <div class="modal-icon-tumb">
+              <input
+                class="form-input"
+                type="tel"
+                id="user_phone"
+                name="user_phone"
+              />
+              <svg class="form-modal-icon">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-feeld">
             <label class="form-label" for="">Email</label>
-            <input
-              class="form-input"
-              type="email"
-              id="user_email"
-              name="user_email"
-            />
+            <div class="modal-icon-tumb">
+              <input
+                class="form-input"
+                type="email"
+                id="user_email"
+                name="user_email"
+              />
+
+              <svg class="form-modal-icon">
+                <use href="./images/icons.svg#icon-Vector-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-feeld">
@@ -530,6 +546,18 @@
               id="Comment"
               placeholder="Text input"
             ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="checkbox-modal"
+              id="checkbox-modal"
+            />
+            <label class="label-checkbox" for="checkbox-modal"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
           </div>
 
           <button class="button-modal-send" type="submit">Send</button>
