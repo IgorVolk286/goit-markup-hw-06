@@ -482,7 +482,7 @@
 
     <!--------------------- модальное окно ------------------------------------ -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close-modal" type="button" data-modal-close>
           <svg class="molal-icon">
@@ -500,6 +500,7 @@
                 type="text"
                 id="user_name"
                 name="user_name"
+                required
               />
               <svg class="form-modal-icon">
                 <use href="./images/icons.svg#icon-Vector-1-1"></use>
@@ -515,6 +516,11 @@
                 type="tel"
                 id="user_phone"
                 name="user_phone"
+                required
+                pattern="^\+380-\d{3}-\d{2}-\d{2}$"
+                title="+380-000-00-00"
+                minlength="13"
+                maxlength="13"
               />
               <svg class="form-modal-icon">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
@@ -530,6 +536,7 @@
                 type="email"
                 id="user_email"
                 name="user_email"
+                required
               />
 
               <svg class="form-modal-icon">
@@ -549,11 +556,16 @@
           </div>
           <div class="form-checkbox">
             <input
-              class="input-checkbox"
+              class="input-checkbox visually-hidden"
               type="checkbox"
               name="checkbox-modal"
               id="checkbox-modal"
             />
+            <span class="form-span">
+              <svg class="modal-span-icon">
+                <use href="./images/icons.svg#icon-Vector-3"></use>
+              </svg>
+            </span>
             <label class="label-checkbox" for="checkbox-modal"
               >I accept the terms and conditions of the
               <a href="">Privacy Policy</a></label
@@ -568,4 +580,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-is-hidden
