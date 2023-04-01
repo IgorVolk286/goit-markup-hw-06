@@ -452,7 +452,7 @@ img {
 }
 
 .social-media {
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .text-media {
@@ -492,7 +492,9 @@ img {
 .social-media-link:focus {
   background-color: #31d0aa;
 }
-
+.form-footer {
+  display: flex;
+}
 .input-footer {
   width: 264px;
   height: 40px;
@@ -524,10 +526,14 @@ img {
   color: #ffffff;
 }
 .form-button-footer {
-  position: relative;
-  width: 165px;
-  height: 40px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  /* position: relative; */
+  /* width: 165px;
+  height: 40px; */
   padding: 8px 24px;
+  padding-right: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -545,9 +551,9 @@ img {
 }
 
 .form-icon-footer {
-  position: absolute;
+  /* position: absolute;
   top: 50;
-  right: 24px;
+  right: 24px; */
   width: 24px;
   height: 24px;
 }
@@ -563,7 +569,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-
   margin: 0 auto;
 }
 .filter-item {
@@ -763,8 +768,10 @@ img {
   color: #2e2f42;
 }
 .form-feeld {
+  margin-bottom: 8px;
 }
 .form-label {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -788,7 +795,6 @@ img {
 }
 .modal-icon-tumb {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .form-modal-icon {
@@ -837,8 +843,8 @@ img {
 .button-modal-send {
   display: block;
   margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
+  /* min-width: 169px;
+  height: 56px; */
   padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
@@ -909,6 +915,3 @@ img {
   border: none;
   fill: #e7e9fc;
 }
-/* .input-checkbox:checked + .modal-span-icon {
-  fill: ;
-} */
